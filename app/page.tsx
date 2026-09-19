@@ -8,7 +8,7 @@ import {
   Leaf, AlertTriangle, Eye, Activity, Search, 
   Lightbulb, ArrowRight, BookOpen, Target, CheckCircle2, ChevronRight, Droplets, Wind,
   Waves, Trash2, TreePine, CloudFog, Sprout, Bug, Check, Box, Workflow, Code2, Cpu,
-  Download
+  Download, MapPin
 } from "lucide-react";
 import AgentWorkflow from "@/components/AgentWorkflow";
 import AnalysisDashboard from "@/components/AnalysisDashboard";
@@ -298,6 +298,35 @@ export default function Home() {
                     <p className="text-slate-400 text-sm leading-relaxed">
                       Turn the findings into practical recommendations and an action plan.
                     </p>
+                  </div>
+                </div>
+            </div>
+            
+            {/* 2.5 LOCAL ENVIRONMENTAL CONTEXT */}
+            <div className="w-full max-w-6xl my-24 bg-slate-900/50 backdrop-blur-md border border-slate-800 rounded-[2rem] p-8 md:p-12 relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">
+                <MapPin size={200} />
+              </div>
+              <ScrollReveal direction="up">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 rounded-2xl bg-emerald-900/50 border border-emerald-500/30 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+                    <MapPin className="text-emerald-400" size={32} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Local Environmental Context</h3>
+                  <p className="text-lg text-slate-400 max-w-2xl leading-relaxed mb-12">
+                    EcoWatch connects environmental observations with the local authorities and organizations that may be relevant to addressing them.
+                  </p>
+                  
+                  <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 font-bold text-sm md:text-base">
+                    <span className="bg-slate-950/60 border border-slate-800 px-4 py-2 rounded-lg text-blue-400">DETECT</span>
+                    <ArrowRight size={16} className="text-slate-600 hidden sm:block" />
+                    <span className="bg-slate-950/60 border border-slate-800 px-4 py-2 rounded-lg text-purple-400">UNDERSTAND</span>
+                    <ArrowRight size={16} className="text-slate-600 hidden sm:block" />
+                    <span className="bg-slate-950/60 border border-slate-800 px-4 py-2 rounded-lg text-amber-400">RESEARCH</span>
+                    <ArrowRight size={16} className="text-slate-600 hidden sm:block" />
+                    <span className="bg-emerald-950/60 border border-emerald-900/50 px-4 py-2 rounded-lg text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.2)]">IDENTIFY LOCAL AUTHORITY</span>
+                    <ArrowRight size={16} className="text-slate-600 hidden sm:block" />
+                    <span className="bg-slate-950/60 border border-slate-800 px-4 py-2 rounded-lg text-white">ACT</span>
                   </div>
                 </div>
               </ScrollReveal>

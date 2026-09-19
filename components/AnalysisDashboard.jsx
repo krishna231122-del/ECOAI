@@ -2,6 +2,7 @@ import { Search, Eye, AlertTriangle, BookOpen, Download } from "lucide-react";
 import SeverityScore from "./SeverityScore";
 import ActionPlan from "./ActionPlan";
 import ImpactVisualization from "./ImpactVisualization";
+import LocalAction from "./LocalAction";
 
 const renderListItem = (item) => {
   if (!item) return "";
@@ -132,6 +133,9 @@ export default function AnalysisDashboard({ result, isDownloadingPdf, generatePD
 
         {/* Impact Visualization */}
         <ImpactVisualization impact={result.impactVisualization} />
+
+        {/* Local Environmental Authority */}
+        <LocalAction analysis={result} />
 
       </div>
     </div>
