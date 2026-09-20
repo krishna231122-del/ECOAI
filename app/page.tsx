@@ -570,13 +570,12 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-400">
               <a href="#how-it-works" onClick={(e) => { e.preventDefault(); document.getElementById("how-it-works")?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">How It Works</a>
               <a href="#technology" onClick={(e) => { e.preventDefault(); document.getElementById("technology")?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">Technology</a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
               <button onClick={() => document.getElementById("upload-section")?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-white transition-colors text-eco-400">Start Analysis</button>
             </div>
           </div>
           
           <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800/50 text-center text-xs text-slate-500 font-bold uppercase tracking-widest">
-            Built for NextStep Hacks 2026 — Earth Forward
+            EcoWatch AI &copy; 2026
           </div>
         </footer>
       )}
