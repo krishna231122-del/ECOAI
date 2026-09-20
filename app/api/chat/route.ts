@@ -42,7 +42,8 @@ ${JSON.stringify(context, null, 2)}`;
       messages: apiMessages
     });
 
-    const aiMessage = response.choices?.[0]?.message?.content || "I'm sorry, I couldn't generate a response.";
+    const content = response.choices?.[0]?.message?.content;
+    const aiMessage = typeof content === 'string' ? content : "I'm sorry, I couldn't generate a response.";
 
     return NextResponse.json({ response: aiMessage });
 

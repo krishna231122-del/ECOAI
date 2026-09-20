@@ -82,7 +82,8 @@ export async function POST(request: Request) {
       ]
     });
 
-    const finalJsonString = response.choices?.[0]?.message?.content || "{}";
+    const content = response.choices?.[0]?.message?.content;
+    const finalJsonString = typeof content === 'string' ? content : "{}";
     let finalResult;
     try {
       finalResult = JSON.parse(finalJsonString);
