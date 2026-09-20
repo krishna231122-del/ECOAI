@@ -3,6 +3,8 @@ import SeverityScore from "./SeverityScore";
 import ActionPlan from "./ActionPlan";
 import ImpactVisualization from "./ImpactVisualization";
 import LocalAction from "./LocalAction";
+import FutureImpact from "./FutureImpact";
+import ExpertChat from "./ExpertChat";
 
 const renderListItem = (item) => {
   if (!item) return "";
@@ -131,11 +133,17 @@ export default function AnalysisDashboard({ result, isDownloadingPdf, generatePD
         {/* Action Plan & Timeline */}
         <ActionPlan actionPlan={result.actionPlan} timeline={result.timeline} />
 
+        {/* Future Impact Simulator */}
+        <FutureImpact impact={result.futureImpact} />
+
         {/* Impact Visualization */}
         <ImpactVisualization impact={result.impactVisualization} />
 
         {/* Local Environmental Authority */}
         <LocalAction analysis={result} />
+
+        {/* Ask the Expert Chat */}
+        <ExpertChat context={result} />
 
       </div>
     </div>

@@ -300,8 +300,8 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
+              </ScrollReveal>
             </div>
-            
             {/* 2.5 LOCAL ENVIRONMENTAL CONTEXT */}
             <div className="w-full max-w-6xl my-24 bg-slate-900/50 backdrop-blur-md border border-slate-800 rounded-[2rem] p-8 md:p-12 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">

@@ -65,7 +65,12 @@ export async function POST(request: Request) {
                   "currentSituation": "Description of current state",
                   "intervention": "Description of cleanup/action",
                   "potentialOutcomes": ["Qualitative outcome 1", "Qualitative outcome 2", "Qualitative outcome 3"]
-                }
+                },
+                "futureImpact": [
+                  { "timeframe": "1 Month", "consequence": "Description of consequence if ignored for 1 month" },
+                  { "timeframe": "6 Months", "consequence": "Description of consequence if ignored for 6 months" },
+                  { "timeframe": "1 Year", "consequence": "Description of consequence if ignored for 1 year" }
+                ]
               }`
             },
             { 
