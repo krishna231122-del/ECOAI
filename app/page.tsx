@@ -573,10 +573,6 @@ export default function Home() {
               <button onClick={() => document.getElementById("upload-section")?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-white transition-colors text-eco-400">Start Analysis</button>
             </div>
           </div>
-          
-          <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800/50 text-center text-xs text-slate-500 font-bold uppercase tracking-widest">
-            EcoWatch AI &copy; 2026
-          </div>
         </footer>
       )}
     </div>
